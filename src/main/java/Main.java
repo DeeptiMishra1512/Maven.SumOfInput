@@ -11,8 +11,11 @@ public class Main {
         int number = getInputNumber();
         
         int sum = sumOfNumbers(number);
+
+        int sum2 = gaussianSumOfNumbers(number);
         
         System.out.println(sum);
+        System.out.println(sum2);
 
     }
     
@@ -25,7 +28,7 @@ public class Main {
             total = total + i;
 
         }
-
+        System.out.println("Sum Of Numbers is: " + total);
         return total;
     }
     
@@ -45,8 +48,18 @@ public class Main {
     
     
     // for Extra Credit
-    int gaussianSumOfNumbers(int n) {
-        return 0;
+    static int gaussianSumOfNumbers(int n) {
+        int sum2 = 0;
+        //int num[];
+        for (int j = 0; j <= n;  j++)
+        {
+            //assign values in array
+            //int num[] = num[j];
+            sum2 = (n * (n + 1)) / 2;
+
+        }
+        System.out.println("Gussain Sum Of Numbers is: " + sum2);
+        return sum2;
     }
    
     // for Extra extra credit - compare the methods and show which one is faster
